@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/font.css"/>
+
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Login Guild Crown</title>
+    
+    <style>
+    body {
+      background-image: url('img1.jpg');
+      background-size: 1400px;
+    }
+    </style>
+  </head>
+
+  <body>
+    <!--navbar-->
+    <div class="navbar-fixed">
+        <nav class="grey darken-4"> 
+          <div class="container">
+            <div class="nav-wrapper">
+              <a href="#" class="brand-logo"><img src="img/iconw.png" alt="logo" width="190" height="60"><span></span></a>
+              <ul class="right hide-on-med-and-down">
+                <li><a href="index.html" class="text-nav">| Home</a></li>
+                <li><a href="" class="text-nav">| Job list</a></li>
+                <li><a href="registersso.html" class="text-nav">| register</a></li>
+                <li><a href="#" class="dropdown-trigger btn" data-target='dropdown1' style="font-family: Bebas Neue; font-size: 32px; background-color: #212121 ;">| Login</a></li>
+                <ul id='dropdown1' class='dropdown-content'>
+                  <li><a href="login.html" class="text-nav" style="color: black;">login as member</a></li>
+                  <li><a href="loginsso.html" class="text-nav" style="color: black;">login as civilian</a></li>
+                </ul>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="container3" style="opacity: 85%;"><img src="img/iconb.png" alt="container3" style="margin-left: 220px;">
+        <div class="row">x
+            <form class="col s12">
+              <div class="row"  >
+                <div class="input-field col s4 m6 l6 offset-l3 s12">
+                  <input value="chiesamghz@gmail.com" id="username" type="text" class="validate">
+                  <label for="username" class="font-bebas" style="color: black;">email</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col s12">
+                  <a href="afterlogincivil.html" class="button-search2" style="margin-left: 345px; height: 75px; width: 150px; font-size: 20pt; opacity: 100%;">login</a>
+                </div>
+              </div>
+            </form>
+        </div>
+    </div>
+      </footer>  
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script>
+        const dropdown1= document.querySelectorAll('.dropdown-trigger');
+      M.Dropdown.init(dropdown1);
+        const collapsible= document.querySelectorAll('.collapsible');
+      M.Collapsible.init(collapsible)
+    </script>
+  </body>
+</html>
+      

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/font.css"/>
+
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Login Guild Crown</title>
+    
+    <style>
+    body {
+      background-image: url('img1.jpg');
+      background-size: 1400px;
+    }
+    </style>
+  </head>
+
+  <body>
+    <!--navbar-->
+    <div class="navbar-fixed">
+        <nav class="grey darken-4"> 
+          <div class="container">
+            <div class="nav-wrapper">
+              <a href="#" class="brand-logo"><img src="img/iconw.png" alt="logo" width="190" height="60"><span></span></a>
+              <ul class="right hide-on-med-and-down">
+                <li><a href="index.html" class="text-nav">| Home</a></li>
+                <li><a href="" class="text-nav">| Job list</a></li>
+                <li><a href="registersso.html" class="text-nav">| register</a></li>
+                <li><a href="#" class="dropdown-trigger btn" data-target='dropdown1' style="font-family: Bebas Neue; font-size: 32px; background-color: #212121 ;">| Login</a></li>
+                <ul id='dropdown1' class='dropdown-content'>
+                  <li><a href="login.html" class="text-nav" style="color: black;">login as member</a></li>
+                  <li><a href="loginsso.html" class="text-nav" style="color: black;">login as civilian</a></li>
+                </ul>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="container3"><img src="img/iconb.png" alt="container3" style="margin-left: 220px;">
+          <div class="row">x
+              <form class="col s12">
+                <div class="row">
+                  <div class="input-field col s4 m6 l6 offset-l3 s12">
+                    <ul>
+                        <li>
+                          <a href="register.html" class="collapsible-header" style="background-color: #285393 ; color: white; width:390px;height:70px;"><img src="img/fb.png" style="width:30px;height:30px;">Register with Facebook</a>
+                        </li>
+                        <li>
+                          <a href="register.html" class="collapsible-header" style="background-color: #00acee ; color: white; width:390px;height:70px;"><img src="img/download.png" style="width:30px;height:30px;">Register with Twitter</a>
+                        </li>
+                        <li>
+                          <a href="register.html" class="collapsible-header" style="background-color: #fbe9e7 ; color: black; width:390px;height:70px;"><img src="img/google.png" style="width:30px;height:30px;">Register with Google</a>
+                        </li>
+                        <li>
+                          <a href="register.html" class="collapsible-header" style="width:390px;height:70px; color: black;"><img src="img/github.png" style="width:30px;height:30px;">Register with Github</a>
+                        </li>
+                    </ul>
+                  </div>
+                </div>
+              </form>
+          </div>
+      </div>
+      <footer class="page-footer grey darken-3">
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              <h4 class="text-nav">Our Basecamp</h4>
+              <p class="grey-text text-lighten-4" style="font-style: italic;">Serangkai Cafe, Citeureup, Bogor, Jawa Barat 16810</p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+              <h5 class="text-nav">Find us</h5>
+              <ul>
+                <li><a class="font-bebas" style="color: white;" href="#!"><img src="img/ig.png" alt="logo" height="25">gianchiesamghrz</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!"></a></li>
+                <li><a class="font-bebas" style="color: white;" href="#!"><img src="img/yt.png" alt="logo" height="25">Gian GC</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!"></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright grey darken-4">
+          <div class="container">
+          © 2020 Materialize. All right reserved
+          <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+          </div>
+        </div>
+      </footer>  
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script>
+        const dropdown1= document.querySelectorAll('.dropdown-trigger');
+      M.Dropdown.init(dropdown1);
+    </script>
+  </body>
+</html>
+      

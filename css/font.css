@@ -1,0 +1,204 @@
+@font-face {
+  font-family: "Bebas Neue" !important;
+  src: url(../fonts/BebasNeue-Regular.ttf);
+  }
+
+.brand-logo {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  font-family: 'Bebas Neue' !important;
+  }
+
+.font-bebas {
+  font-family: 'Bebas Neue' !important;
+  padding: 0px 0px;
+  align-items: left !important;
+  font-size: 20px;
+  }
+.font-bebas1 {
+  font-family: 'Bebas Neue' !important;
+  padding: 0px 15px;
+  align-items: left !important;
+  font-size: 30px;
+  }
+
+.text-nav {
+  font-family: 'Bebas Neue';
+  font-size: 30px;
+  }
+
+  .button-search {
+    color: #00bff3;
+    padding: 5px 7px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .button-search1 {
+    color: #00bff3;
+    font-family: 'Bebas Neue' !important;
+    padding: 5px 7px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  .button-search2 {
+    color: #fcfcfc;
+    margin-left: 30px;
+    background-color: #00bff3;
+    font-family: 'Bebas Neue' !important;
+    padding: 7px 9px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  .button-searchx {
+    color: #fcfcfc;
+    background-color: #00bff3;
+    font-family: 'Bebas Neue' !important;
+    padding: 2px 4px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  .button-search3 {
+    color: #fcfcfc;
+    margin-left: 15px;
+    background-color: #00bff3;
+    font-family: 'Bebas Neue' !important;
+    padding: 7px 9px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  .platinum {
+    color: #080808;
+    margin-left: 10px;
+    background-color: #fddac8;
+    font-family: 'Bebas Neue' !important;
+    padding: 7px 7px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  .gold {
+    color: #080808;
+    margin-left: 10px;
+    background-color: #ebcf52;
+    font-family: 'Bebas Neue' !important;
+    padding: 7px 7px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  .silver {
+    color: #080808;
+    margin-left: 10px;
+    background-color: #e5e7e2;
+    font-family: 'Bebas Neue' !important;
+    padding: 7px 7px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  .bronze {
+    color: #ffffff;
+    margin-left: 10px;
+    background-color: #a1603f;
+    font-family: 'Bebas Neue' !important;
+    padding: 7px 7px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  .iron {
+    color: #ffffff;
+    margin-left: 10px;
+    background-color: #474747;
+    font-family: 'Bebas Neue' !important;
+    padding: 7px 7px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+
+.container1 {
+  border: 2px solid#00bff3;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 10px 0;
+}
+.container2 {
+  border: 2px solid#00bff3;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  padding: 10px 10px;
+  margin: 100px 100px;
+}
+.container3 {
+  border: 2px solid#00bff3;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  padding: 10px 10px;
+  margin: 100px 250px;
+}
+
+.darker {
+  border-color: #00bff3;
+  background-color: #ddd;
+}
+
+
+.container1::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+.container1 img {
+  float: left;
+  max-width: 60px;
+  width: 100%;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+
+.container1 img.right {
+  float: right;
+  margin-left: 20px;
+  margin-right:0;
+}
+
+.container2 img {
+  float: left;
+  max-width: 600px;
+  width: 100%;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+
+.container2 img.right {
+  float: right;
+  margin-left: 20px;
+  margin-right:0;
+}
+.container3 img {
+  float: left;
+  max-width: 400px;
+  width: 100%;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.container3 img.right {
+  float: right;
+  margin-left: 20px;
+  margin-right:0;
+}
+.time-right {
+  float: right;
+  color:#00bff3;
+}
+
+
+.time-left {
+  float: left;
+  color: #00bff3;
+}
