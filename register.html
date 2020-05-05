@@ -21,17 +21,18 @@
 
     <body>
       <!--navbar-->
-      <div class="navbar-fixed">
+      <div>
         <nav class="grey darken-4"> 
           <div class="container">
             <div class="nav-wrapper">
               <a href="#" class="brand-logo"><img src="img/iconw.png" alt="logo" width="190" height="60"><span></span></a>
+              <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
               <ul class="right hide-on-med-and-down">
-                <li><a href="index.html" class="text-nav">| Home</a></li>
-                <li><a href="" class="text-nav">| Job list</a></li>
-                <li><a href="registersso.html" class="text-nav">| register</a></li>
-                <li><a href="#" class="dropdown-trigger btn" data-target='dropdown1' style="font-family: Bebas Neue; font-size: 32px; background-color: #212121 ;">| Login</a></li>
-                <ul id='dropdown1' class='dropdown-content'>
+              <li><a href="index.html" class="text-nav">| Home</a></li>
+              <li><a href="" class="text-nav">| Job list</a></li>
+              <li><a href="registersso.html" class="text-nav">| register</a></li>
+              <li><a href="#" class="dropdown-trigger" data-target='dropdown2' style="font-family: Bebas Neue; font-size: 32px; background-color: #212121 ;">| Login</a></li>
+                <ul id='dropdown2' class='dropdown-content'>
                   <li><a href="login.html" class="text-nav" style="color: black;">login as member</a></li>
                   <li><a href="loginsso.html" class="text-nav" style="color: black;">login as civilian</a></li>
                 </ul>
@@ -39,114 +40,142 @@
             </div>
           </div>
         </nav>
+        <ul class="sidenav" id="mobile-nav">
+          <li><a href="index.html" class="text-nav">| Home</a></li>
+          <li><a href="" class="text-nav">| Job list</a></li>
+          <li><a href="registersso.html" class="text-nav">| register</a></li>
+          <li><a href="#" class="dropdown-trigger" data-target='dropdown1' style="font-family: Bebas Neue; font-size: 15px; background-color: white; color: black; align-items: flex-start;">| Login</a></li>
+          <ul id='dropdown1' class='dropdown-content'>
+            <li><a href="login.html" class="text-nav" style="color: black;">login as member</a></li>
+            <li><a href="loginsso.html" class="text-nav" style="color: black;">login as civilian</a></li>
+        </ul>
       </div>
-        <div class="container2" style="opacity: 85%;"><img src="img/iconb.png" alt="container2" style="margin-left: 290px;">
         <div class="row">
-            <form class="col s12">
-              <div class="row">
-                <div class="input-field col s6">
-                  <input value="Gian Chiesa Maghriza" id="full_name" type="text" class="validate">
-                  <label for="full_name" class="font-bebas" style="color: black;">Full name</label>
-                </div>
-                <div class="input-field col s6">
-                  <input value="16810 Citeureup Bogor" id="address" type="text" class="validate">
-                  <label for="address" class="font-bebas" style="color: black;">address</label>
-                </div>
+          <div class="col s12 m6 offset-m3">
+            <div class="card">
+              <div class="card-image">
+                <img src="img/iconb.png">
+                <span class="card-title"></span>
               </div>
-              <div class="row">
-                <div class="input-field col s6">
-                  <input value="GianGC" id="codename" type="text" class="validate">
-                  <label for="codename" class="font-bebas" style="color: black;">codename</label>
-                </div>
-                <div class="input-field col s6">
-                  <input value="chiesamghz@gmail.com" id="email" type="email" class="validate">
-                  <label for="email" class="font-bebas" style="color: black;">Email</label>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col s6">
-                  <span class="font-bebas" style="color: black;">NIK :</span>
-                  <div class="input-field inline">
-                    <input value="1313618021" id="email_inline" type="email" class="validate">
-                    <label for="email_inline" class="font-bebas" style="color: black;"></label>
-                    <span class="helper-text" data-error="wrong" data-success="right" class="font-bebas" style="color: black;"></span>
+              <div class="card-content">
+                <ul>
+                  <li>
+                    <div class="row">
+                      <div class="input-field col s6">
+                        <input value="Gian Chiesa Maghriza" id="full_name" type="text" class="validate">
+                        <label for="full_name" class="font-bebas" style="color: black;">Full name</label>
+                      </div>
+                      <div class="input-field col s6">
+                        <input value="16810 Citeureup Bogor" id="address" type="text" class="validate">
+                        <label for="address" class="font-bebas" style="color: black;">address</label>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="row">
+                      <div class="input-field col s6">
+                        <input value="GianGC" id="codename" type="text" class="validate">
+                        <label for="codename" class="font-bebas" style="color: black;">codename</label>
+                      </div>
+                      <div class="input-field col s6">
+                        <input value="chiesamghz@gmail.com" id="email" type="email" class="validate">
+                        <label for="email" class="font-bebas" style="color: black;">Email</label>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="row">
+                      <div class="col s6">
+                        <span class="font-bebas" style="color: black;">NIK :</span>
+                        <div class="input-field inline">
+                          <input value="1313618021" id="email_inline" type="email" class="validate">
+                          <label for="email_inline" class="font-bebas" style="color: black;"></label>
+                          <span class="helper-text" data-error="wrong" data-success="right" class="font-bebas" style="color: black;"></span>
+                        </div>
+                      </div>
+                      <div class="col s6">
+                        <input value="28/09/1999" id="datepicker" type="text" class="datepicker" style="margin-top: 10px;">
+                        <label for="datepicker" class="font-bebas" style="color: black;">Birthdate</label>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="row">
+                      <div class="col s3">
+                        <form action="#">
+                          <p class="font-bebas">join period</p>
+                          <p>
+                            <label class="font-bebas" style="color: black;">
+                              <input name="group1" type="radio" checked />
+                              <span>a year</span>
+                            </label>
+                          </p>
+                          <p>
+                            <label class="font-bebas" style="color: black;">
+                              <input name="group1" type="radio" />
+                              <span>half year</span>
+                            </label>
+                          </p>
+                          <p>
+                            <label class="font-bebas" style="color: black;">
+                              <input class="with-gap" name="group1" type="radio"  />
+                              <span>3 months</span>
+                            </label>
+                          </p>
+                          <p>
+                            <label class="font-bebas" style="color: black;">
+                              <input name="group1" type="radio" />
+                              <span>1 month</span>
+                            </label>
+                          </p>
+                        </form>
+                      </div>
+                      <div class="col s3">
+                        <form action="#">
+                          <p class="font-bebas">member type</p>
+                          <p>
+                            <label class="font-bebas" style="color: black;">
+                              <input name="group1" type="radio" />
+                              <span>civilian</span>
+                            </label>
+                          </p>
+                          <p>
+                            <label class="font-bebas" style="color: black;">
+                              <input name="group1" type="radio" checked />
+                              <span>guild member</span>
+                            </label>
+                          </p>
+                      </div>
+                      <div class="input-field col s6">
+                        <p><input value="Dragon Slayer"  id="profession" type="text" class="validate">
+                        <label for="profession" class="font-bebas" style="color: black;">profession</label></p>
+                        <p><input value="Ultimate Sword, Flash Move, Unbreakable, Phsycal Boost" id="skillset" type="text" class="validate">
+                        <label for="skillset" class="font-bebas" style="color: black;">skill set</label></p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="row">
+                      <div class="col s12">
+                      <a class="waves-effect waves-light btn modal-trigger" href="#modal1" style="color: white; background-color: #00bff3; font-family: Bebas Neue; font-size: 20px;">register</a>
+                      <div id="modal1" class="modal">
+                        <div class="modal-content">
+                          <h4 class="text-nav">Register Succes</h4>
+                          <p>codename = GianGC</p>
+                          <p>Password = qwerty123</p>
+                        </div>
+                        <div class="modal-footer">
+                          <a href="login.html" class="modal-close waves-effect waves-green btn-flat" style=" background-color: #00bff3; font-family: Bebas Neue; font-size: 20px; margin-right: 20px;">login</a>
+                        </div>
+                      </div>              
+                    </div>
                   </div>
-                </div>
-                <div class="col s6">
-                  <input value="28/09/1999" id="datepicker" type="text" class="datepicker" style="margin-top: 10px;">
-                  <label for="datepicker" class="font-bebas" style="color: black;">Birthdate</label>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col s3">
-                  <form action="#">
-                    <p class="font-bebas">join period</p>
-                    <p>
-                      <label class="font-bebas" style="color: black;">
-                        <input name="group1" type="radio" checked />
-                        <span>a year</span>
-                      </label>
-                    </p>
-                    <p>
-                      <label class="font-bebas" style="color: black;">
-                        <input name="group1" type="radio" />
-                        <span>half year</span>
-                      </label>
-                    </p>
-                    <p>
-                      <label class="font-bebas" style="color: black;">
-                        <input class="with-gap" name="group1" type="radio"  />
-                        <span>3 months</span>
-                      </label>
-                    </p>
-                    <p>
-                      <label class="font-bebas" style="color: black;">
-                        <input name="group1" type="radio" />
-                        <span>1 month</span>
-                      </label>
-                    </p>
                   </form>
-                </div>
-                <div class="col s3">
-                  <form action="#">
-                    <p class="font-bebas">member type</p>
-                    <p>
-                      <label class="font-bebas" style="color: black;">
-                        <input name="group1" type="radio" />
-                        <span>civilian</span>
-                      </label>
-                    </p>
-                    <p>
-                      <label class="font-bebas" style="color: black;">
-                        <input name="group1" type="radio" checked />
-                        <span>guild member</span>
-                      </label>
-                    </p>
-                </div>
-                <div class="input-field col s6">
-                  <p><input value="Dragon Slayer"  id="profession" type="text" class="validate">
-                  <label for="profession" class="font-bebas" style="color: black;">profession</label></p>
-                  <p><input value="Ultimate Sword, Flash Move, Unbreakable, Phsycal Boost" id="skillset" type="text" class="validate">
-                  <label for="skillset" class="font-bebas" style="color: black;">skill set</label></p>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col s12">
-                <a class="waves-effect waves-light btn modal-trigger" href="#modal1" style="color: white; background-color: #00bff3; font-family: Bebas Neue; font-size: 20px;">register</a>
-                <div id="modal1" class="modal">
-                  <div class="modal-content">
-                    <h4 class="text-nav">Register Succes</h4>
-                    <p>codename = GianGC</p>
-                    <p>Password = qwerty123</p>
-                  </div>
-                  <div class="modal-footer">
-                    <a href="login.html" class="modal-close waves-effect waves-green btn-flat" style=" background-color: #00bff3; font-family: Bebas Neue; font-size: 20px; margin-right: 20px;">login</a>
-                  </div>
-                </div>              
+                  </li>
+                </ul>
               </div>
             </div>
-            </form>
-        </div>
+          </div>
         </div>
         <footer class="page-footer grey darken-3">
           <div class="container">
@@ -183,6 +212,12 @@
       M.Datepicker.init(datepicker)
         const modal= document.querySelectorAll('.modal')
       M.Modal.init(modal)
+
+      document.addEventListener('DOMContentLoaded', function() {
+      var elems2 = document.querySelectorAll('.sidenav');
+      var instances2 = M.Sidenav.init(elems2, {});
+
+      });
       </script>
     </body>
   </html>

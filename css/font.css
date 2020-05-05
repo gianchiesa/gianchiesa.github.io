@@ -1,3 +1,23 @@
+  
+@media screen and (max-width: 600px) {
+  .brand-logo {
+      display: none !important;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .brand-logo {
+      display: flex !important;
+      align-items: center !important;
+      justify-content: flex-start !important;
+      font-family: 'Bebas Neue' !important;
+      color: #C1272D !important;
+    }
+}
+.vertical-middle {
+  vertical-align: middle;
+}
+
 @font-face {
   font-family: "Bebas Neue" !important;
   src: url(../fonts/BebasNeue-Regular.ttf);

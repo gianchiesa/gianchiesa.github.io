@@ -20,48 +20,67 @@
   </head>
 
   <body>
-    <!--navbar-->
-    <div class="navbar-fixed">
+    <div>
       <nav class="grey darken-4"> 
         <div class="container">
           <div class="nav-wrapper">
             <a href="#" class="brand-logo"><img src="img/iconw.png" alt="logo" width="190" height="60"><span></span></a>
+            <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             <ul class="right hide-on-med-and-down">
-              <li><a href="index.html" class="text-nav">| Home</a></li>
-              <li><a href="" class="text-nav">| Job list</a></li>
-              <li><a href="registersso.html" class="text-nav">| register</a></li>
-              <li><a href="#" class="dropdown-trigger btn" data-target='dropdown1' style="font-family: Bebas Neue; font-size: 32px; background-color: #212121 ;">| Login</a></li>
-                <ul id='dropdown1' class='dropdown-content'>
-                  <li><a href="login.html" class="text-nav" style="color: black;">login as member</a></li>
-                  <li><a href="loginsso.html" class="text-nav" style="color: black;">login as civilian</a></li>
-                </ul>
+            <li><a href="index.html" class="text-nav">| Home</a></li>
+            <li><a href="" class="text-nav">| Job list</a></li>
+            <li><a href="registersso.html" class="text-nav">| register</a></li>
+            <li><a href="#" class="dropdown-trigger btn" data-target='dropdown2' style="font-family: Bebas Neue; font-size: 32px; background-color: #212121 ;">| Login</a></li>
+              <ul id='dropdown2' class='dropdown-content'>
+                <li><a href="login.html" class="text-nav" style="color: black;">login as member</a></li>
+                <li><a href="loginsso.html" class="text-nav" style="color: black;">login as civilian</a></li>
+              </ul>
             </ul>
           </div>
         </div>
       </nav>
+      <ul class="sidenav" id="mobile-nav">
+        <li><a href="index.html" class="text-nav">| Home</a></li>
+        <li><a href="" class="text-nav">| Job list</a></li>
+        <li><a href="registersso.html" class="text-nav">| register</a></li>
+        <li><a href="#" class="dropdown-trigger" data-target='dropdown1' style="font-family: Bebas Neue; font-size: 15px; background-color: white; color: black; align-items: flex-start;">| Login</a></li>
+        <ul id='dropdown1' class='dropdown-content'>
+          <li><a href="login.html" class="text-nav" style="color: black;">login as member</a></li>
+          <li><a href="loginsso.html" class="text-nav" style="color: black;">login as civilian</a></li>
+      </ul>
     </div>
-    <div class="container3" style="opacity: 85%;"><img src="img/iconb.png" alt="container3" style="margin-left: 220px;">
-        <div class="row">x
-            <form class="col s12">
-              <div class="row"  >
-                <div class="input-field col s4 m6 l6 offset-l3 s12">
-                  <input value="GianGC"id="username" type="text" class="validate">
-                  <label for="username" class="font-bebas" style="color: black;">Username</label>
-                </div>
-              </div>
-              <div class="row">
-                <div class="input-field col s4 m6 l6 offset-l3 s12">
-                  <input value="qwerty123" id="password" type="password" class="validate">
-                  <label for="password" class="font-bebas" style="color: black;">Password</label>
-                </div>
-                <div class="row">
-                  <div class="col s12">
-                    <a href="afterlogin.html" class="button-search2" style="margin-left: 345px; height: 75px; width: 150px; font-size: 20pt; opacity: 100%;">login</a>
+    <div class="row">
+      <div class="col s12 m6 offset-m3">
+        <div class="card">
+          <div class="card-image">
+            <img src="img/iconb.png">
+            <span class="card-title"></span>
+          </div>
+          <div class="card-content">
+            <ul>
+              <li>
+                <div class="row"  >
+                  <div class="input-field col s4 m6 l6 offset-l3 s12">
+                    <input value="GianGC"id="username" type="text" class="validate">
+                    <label for="username" class="font-bebas" style="color: black;">Username</label>
                   </div>
                 </div>
-              </div>
-            </form>
+                <div class="row">
+                  <div class="input-field col s4 m6 l6 offset-l3 s12">
+                    <input value="qwerty123" id="password" type="password" class="validate">
+                    <label for="password" class="font-bebas" style="color: black;">Password</label>
+                  </div>
+                  <div class="row">
+                    <div class="col s12">
+                      <a href="afterlogin.html" class="button-search2" style="margin-left: 170px; height: 75px; width: 150px; font-size: 20pt; opacity: 100%;">login</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
+      </div>
     </div>
     <footer class="page-footer grey darken-3">
       <div class="container">
@@ -96,6 +115,12 @@
     <script>
       const dropdown1= document.querySelectorAll('.dropdown-trigger');
     M.Dropdown.init(dropdown1);
+
+    document.addEventListener('DOMContentLoaded', function() {
+      var elems2 = document.querySelectorAll('.sidenav');
+      var instances2 = M.Sidenav.init(elems2, {});
+
+      });
     </script>
   </body>
 </html>

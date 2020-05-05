@@ -14,49 +14,62 @@
 
   <body>
     <!--navbar-->
-    <div class="navbar-fixed">
+    <div>
         <nav class="grey darken-4"> 
           <div class="container">
             <div class="nav-wrapper">
               <a href="#" class="brand-logo"><img src="img/iconw.png" alt="logo" width="190" height="60"><span></span></a>
+              <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
               <ul class="right hide-on-med-and-down">
-                <li><a href="index.html" class="text-nav">| Home</a></li>
-                <li><a href="" class="text-nav">| Job list</a></li>
-                <li><a href="registersso.html" class="text-nav" style="color: #00bff3;">| GianGC</a></li>
-                <li><a href="index.html" class="text-nav">| Logout</a></li>
+              <li><a href="index.html" class="text-nav">| Home</a></li>
+              <li><a href="" class="text-nav">| Job list</a></li>
+              <li><a href="registersso.html" class="text-nav" style="color: #00bff3;">| GianGC</a></li>
+              <li><a href="index.html" class="text-nav">| logout</a></li>
               </ul>
             </div>
           </div>
         </nav>
+        <ul class="sidenav" id="mobile-nav">
+          <li><a href="index.html" class="text-nav">| Home</a></li>
+          <li><a href="" class="text-nav">| Job list</a></li>
+          <li><a href="registersso.html" class="text-nav">| register</a></li>
+          <li><a href="index.html" class="text-nav">| logout</a></li>
+        </ul>
       </div>
     <!--slider-->
-    <div class="slider">
-      <ul class="slides">
-        <li>
-          <img src="img/img1.jpg">
-          <div class="caption center-align">
-            <h3></h3>
-            <h5 class="light grey-text text-lighten-3"></h5>
-          </div>
-        </li>
-      </ul>
+    <div class="hide-on-small-only">
+      <div class="slider">
+        <ul class="slides">
+          <li>
+            <img class="vertical-middle" src="img/img1.jpg">
+            <div class="caption center-align">
+              <h3></h3>
+              <h5 class="light grey-text text-lighten-3"></h5>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="hide-on-large-only">
+      <img class="vertical-middle" src="img/headerm1.jpg">
     </div>
     <!--content-->
     <section id="Home" class="Home">
         <div class="row">
-          <div class="col s9 m4 l6">
+          <div class="col s12 m4 l9">
             <h3 class="font-bebas1">Home</h3>
-            <a><img src="img/line.jpg" alt="" height="42"></a>
-            <a><img src="img/AboutUs.png" alt="" height="320"></a>
+            <div class="row">
+              <div class="col s12 m12 l12">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="img/AboutUs2.png">
+                    <span class="card-title"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="input-field col s9 m4 l2">
-            <input id="icon_telephone" type="tel" class="validate">
-            <label for="icon_telephone">search</label>
-          </div>
-          <div class="input-field col s9 m4 l1">
-            <button class="button-search"><i class="material-icons">search</i>
-            </button>
-          </div>
+          <div class="hide-on-small-only">
           <div class="col s3 m4 l3 x13 offset-x11">
             <h3 class="font-bebas">Chat room</h3>
             <a><img src="img/line.jpg" alt="" height="14"></a>
@@ -87,12 +100,17 @@
                 </div>
             </div>
           </div>
+          </div>
         </div>
         <div class="row">
           <div class="col s9 m4 l4">
             <h3 class="font-bebas1">Job list</h3>
-            <a><img src="img/line.jpg" alt="" height="42"></a>
+            <a><img src="img/line1.jpg" alt="" height="42"></a>
+            <div class="hide-on-small-only">
+              <a><img src="img/line.jpg" alt="" height="42"></a>
+            </div>
           </div>
+          <div class="hide-on-small-only">
           <div class="input-field col s9 m4 l1">
             <button class="button-search1"><i class="material-icons">filter_list</i>filter
             </button>
@@ -107,6 +125,7 @@
           <div class="input-field col s9 m4 l1">
             <button class="button-search"><i class="material-icons">search</i>
             </button>
+          </div>
           </div>
         </div>
         <div class="row">
@@ -248,7 +267,13 @@
         height: 500
       });
       const dropdown1= document.querySelectorAll('.dropdown-trigger');
-      M.Dropdown.init(dropdown1);      
+      M.Dropdown.init(dropdown1);
+
+      document.addEventListener('DOMContentLoaded', function() {
+      var elems2 = document.querySelectorAll('.sidenav');
+      var instances2 = M.Sidenav.init(elems2, {});
+
+      });
     </script>
   </body>
 </html>
