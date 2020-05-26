@@ -69,13 +69,13 @@
                     <a data-target="modal-edit" class="btn-floating halfway-fab waves-effect waves-light white modal-trigger"><i class="material-icons" style="color: black;">edit</i></a>
                   </div>
                   <div class="card-content font-fira">
-                    <p style="font-weight: bold;">Account Information</p>
-                    <p id="username">Username: lazuardyk</p>
-                    <p id="name-2">Name: Lazuardy Khatulistiwa</p>
-                    <p id="nik">NIK: 3169801283714756</p>
-                    <p id="type-member">Type: Civilian</p>
-                    <p id="address">Address: 4640 Fowler Avenue, GA 30501, US</p>
-                    <p id="phone">Phone: +6281395863345</p>
+                    <p style="font-weight: bold;">Account Data</p>
+                    <p id="username">Username: gianchiesamghrz</p>
+                    <p id="name-2">Name: Gian Chiesa Maghriza</p>
+                    <p id="nik">NIK: 3201032809990003</p>
+                    <p id="type-member">Type: Member</p>
+                    <p id="address">Address: 16810 citeureup, Bogor, ID</p>
+                    <p id="phone">Phone: +621231251214</p>
                     <p id="rank">Rank: Iron</p>
                     <div class="notice" style="margin-top: 12px; cursor:pointer; text-align: center;"><span class="alert-new">You are eligible to rank up to Gold! Fill the <a data-target="modal-form" href="#" class="modal-trigger">form</a>.</span></div>
                   </div>
@@ -286,10 +286,43 @@
       const dropdown1= document.querySelectorAll('.dropdown-trigger');
       M.Dropdown.init(dropdown1);
 
+      function logOut(event){
+        event.preventDefault();
+        sessionStorage.clear();
+        window.location.href = "index.html";
+      }
+
       document.addEventListener('DOMContentLoaded', function() {
       var elems2 = document.querySelectorAll('.sidenav');
       var instances2 = M.Sidenav.init(elems2, {});
+      var name = sessionStorage.getItem("full-name");
+        if (name){
+          var username = sessionStorage.getItem("username");
+          var type = sessionStorage.getItem("type-member");
+          var address = sessionStorage.getItem("address");
+          var handphone = sessionStorage.getItem("handphone");
+          var nik = sessionStorage.getItem("nik");
 
+          var htmlname = document.querySelector('#name-1');
+          var htmlname2 = document.querySelector('#name-2');
+          var htmluname = document.querySelector('#username');
+          var htmltype = document.querySelector('#type-member');
+          var htmladdress = document.querySelector('#address');
+          var htmlphone = document.querySelector('#phone');
+          var htmlnik = document.querySelector('#nik');
+          
+          var arrname = name.split(" ")
+          htmlname.textContent = "Welcome, "+arrname[0]+"!";
+          htmlname2.textContent = "Name: "+name;
+          htmluname.textContent = "Username: "+username;
+          htmltype.textContent = "Type: "+type;
+          htmladdress.textContent = "Address: "+address;
+          htmlphone.textContent = "Phone: "+handphone;
+          htmlnik.textContent = "NIK: "+nik;
+        }
+        setTimeout(() => {
+          moveNextCarousel();
+        }, 2000);
       });
     </script>
   </body>
