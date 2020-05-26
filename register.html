@@ -52,8 +52,8 @@
             <li><a href="loginsso.html" class="text-nav" style="color: black;">login as admin</a></li>
         </ul>
       </div>
+      <div class="container">
         <div class="row">
-          <div class="row">
             <div class="col s12 m8 offset-m2">
                 <!-- Modal Structure -->
                 <div id="modal1" class="modal">
@@ -62,167 +62,131 @@
                     <p>Thank you for registering!</p>
                     </div>
                     <div style="text-align:center; margin-bottom: 15px;">
-                    <a href="afterlogin.html" class="modal-close waves-effect waves-green btn">Login</a>
+                    <a href="login.html" class="modal-close waves-effect waves-green btn">Login</a>
                     </div>
                 </div>
                 <!-- <div class="font-bebas center-align" style="font-size: 40px;"><img src="images/logo.svg" class="vertical-middle" style="margin-right: 10px;" alt="Logo" width="70px">Erudite</div> -->
                 <div class="card" style="margin-top: 20px;">
-                    <div class="card-image">
-                      <img src="img/iconb.png">
-                      <span class="card-title"></span>
-                    </div>
                     <div class="card-content">
-                        <p class="font-fira text-nav" style="text-align: center; margin-bottom: 25px; font-size:200%; color:#333533;">Registration Form</p>
+                        <p class="font-fira" style="text-align: center; margin-bottom: 25px; font-size:200%; color:#333533;">Registration Form</p>
                         <form action="afterlogin.html">
-                          <div class="input-field">
-                              <input value="" id="username" type="text" class="validate" required>
-                              <label for="username"  class="text-nav">Username</label>
-                          </div>
-                          <div style="margin-top: -15px;">
-                              <div class="row" style="margin: 0;">
-                                  <div class="col s7 m9" style="padding: 0; height: 70px;">
-                                      <div class="input-field">
-                                          <input onkeyup="checkStrengthPwd()" placeholder="Password" id="password" type="password" required>
-                                          <label for="password"  class="text-nav">Password</label>
-                                          <!-- <span class="password-msg" data-error="wrong" data-success="right"></span> -->
-                                      </div>
-                                  </div>
-                                  <div class="col s5 m3" style="padding: 0;">
-                                      <i onclick="showPwd(1)" id="vis" class="material-icons vertical-middle" style="cursor: pointer; margin-top: 20px;">visibility_off</i>
-                                      <span onclick="generatePwd()" class="btn vertical-middle font-hp" style="margin-top: 20px; margin-left: 5px; padding: 0px 8px; background-color: #00bff3; font-family: Bebas Neue;">Generate</span>
-                                  </div>
-                              </div>
-                              <span class="password-msg" data-error="wrong" data-success="right"></span>
-                          </div>
-                          <div class="row" style="margin: 0;">
-                              <div class="col s7 m9" style="padding: 0; height: 70px;">
-                                  <div class="input-field">
-                                      <input onkeyup="checkMatchPwd()" placeholder="Repeat Your Password" id="password2" type="password" required>
-                                      <label for="password2"  class="text-nav">Repeat Your Password</label>
-                                  </div>
-                              </div>
-                              <div class="col s5 m3" style="padding: 0;">
-                                  <i onclick="showPwd(2)" id="vis2" class="material-icons" style="cursor: pointer; margin-top: 30px;">visibility_off</i>
-                              </div>
-                          </div>
-                          <span class="password2-msg" data-error="wrong" data-success="right"></span>
-                          <!-- <div class="input-field">
-                              <input value="" id="password2" type="password" class="validate" required>
-                              <label for="password2">Confirm Password</label>
-                          </div> -->
-                          <div class="input-field">
+                        <div class="input-field">
+                            <input value="" id="username" type="text" class="validate" required>
+                            <label for="username">Username</label>
+                        </div>
+                        <div style="margin-top: -15px;">
+                            <div class="row" style="margin: 0;">
+                                <div class="col s7 m9" style="padding: 0; height: 70px;">
+                                    <div class="input-field">
+                                        <input onkeyup="checkStrengthPwd()" placeholder="Password" id="password" type="password" required>
+                                        <label for="password">Password</label>
+                                        <!-- <span class="password-msg" data-error="wrong" data-success="right"></span> -->
+                                    </div>
+                                </div>
+                                <div class="col s5 m3" style="padding: 0;">
+                                    <i onclick="showPwd(1)" id="vis" class="material-icons vertical-middle" style="cursor: pointer; margin-top: 20px;">visibility_off</i>
+                                    <span onclick="generatePwd()" class="btn vertical-middle font-hp" style="margin-top: 20px; margin-left: 5px; padding: 0px 8px;">Generate</span>
+                                </div>
+                            </div>
+                            <span class="password-msg" data-error="wrong" data-success="right"></span>
+                        </div>
+                        <div class="row" style="margin: 0;">
+                            <div class="col s7 m9" style="padding: 0; height: 70px;">
+                                <div class="input-field">
+                                    <input onkeyup="checkMatchPwd()" placeholder="Confirm Password" id="password2" type="password" required>
+                                    <label for="password2">Confirm Password</label>
+                                </div>
+                            </div>
+                            <div class="col s5 m3" style="padding: 0;">
+                                <i onclick="showPwd(2)" id="vis2" class="material-icons" style="cursor: pointer; margin-top: 30px;">visibility_off</i>
+                            </div>
+                        </div>
+                        <span class="password2-msg" data-error="wrong" data-success="right"></span>
+                        <!-- <div class="input-field">
+                            <input value="" id="password2" type="password" class="validate" required>
+                            <label for="password2">Confirm Password</label>
+                        </div> -->
+                        <div class="input-field">
+                            <input placeholder="Full Name" value="" id="full_name" type="text" class="validate">
+                            <label for="full_name">Full Name</label>
+                        </div>
+                        <div class="input-field">
+                            <input placeholder="31882137271405587" value="" id="nik" type="number" class="validate" required>
+                            <label for="nik">NIK</label>
+                        </div>
+                        <div class="file-field input-field">
+                            <div class="btn">
+                              <span>Upload KTP</span>
+                              <input type="file" id="ktp" required>
+                            </div>
+                            <div class="file-path-wrapper">
+                              <input class="file-path validate" type="text" value="Choose a file" required>
+                            </div>
+                        </div>
+                        <div class="input-field">
                             <input value="" id="address" type="text" class="validate" required>
                             <label for="address">Address</label>
+                        </div>
+                        <div style="margin-top: -10px; margin-bottom: -10px;">
+                            <div class="row">
+                                <div class="col s6">
+                                    <label>Member Type</label>
+                                    <select id="member-type" name="member-type" class="browser-default">
+                                        <option value="Civilian" selected>Civilian</option>
+                                        <option value="Guild Member">Guild Member</option>
+                                        <option value="Manager">Manager</option>
+                                    </select>
+                                </div>
+                                <div class="col s6">
+                                    <label>Join Period</label>
+                                    <select id="join-period" name="join-period" class="browser-default">
+                                        <option value="1" selected>1 Month</option>
+                                        <option value="3">3 Months</option>
+                                        <option value="6">6 Months</option>
+                                        <option value="12">12 Months</option>
+                                    </select>
+                                </div>
+                            </div>
                         </div>
                         <div style="margin-bottom: -20px;">
                             <div class="row" style="padding: 0;">
                                 <div class="col s6">
                                     <div class="input-field" style="margin-bottom: 0px;">
                                         <input onkeyup="checkPhone(1)" placeholder="+628139847255" id="phone" type="text" style="margin-top: 5px;" required>
-                                        <label for="phone"  class="text-nav">Handphone Number</label>
+                                        <label for="phone">Handphone Number</label>
                                     </div>
                                     <span class="phone-msg" data-error="wrong" data-success="right"></span>
                                 </div>
                                 <div class="col s6">
                                     <div class="input-field" style="margin-bottom: 0px;">
                                         <input onkeyup="checkPhone(2)" placeholder="+628139847255" id="phone2" type="text" style="margin-top: 5px;">
-                                        <label for="phone2"  class="text-nav">Telephone Number (Optional)</label>
+                                        <label for="phone2">Telephone Number (Optional)</label>
                                     </div>
                                     <span class="phone2-msg" data-error="wrong" data-success="right"></span>
                                 </div>
                             </div>
                         </div>
-                          <div class="input-field" style="margin-top: 40px;">
-                              <input placeholder="Full Name" value="" id="full_name" type="text" class="validate">
-                              <label for="full_name"  class="text-nav">Full Name</label>
-                          </div>
-                          <div class="input-field">
-                              <input placeholder="31882137271405587" value="" id="nik" type="number" class="validate" required>
-                              <label for="nik"  class="text-nav">NIK</label>
-                          </div>
-                          <div class="file-field input-field">
-                              <div class="btn" style="background-color: #00bff3;">
-                                <span  class="text-nav">Upload KTP</span>
-                                <input type="file" id="ktp" required>
-                              </div>
-                              <div class="file-path-wrapper">
-                                <input class="file-path validate" type="text" value="Choose a file" required>
-                              </div>
-                          </div>
-                          <div style="margin-top: -10px; margin-bottom: -10px;">
-                            <div class="row">
-                              <div class="col s6">
-                                <form action="#">
-                                  <p class="font-bebas">join period</p>
-                                  <p>
-                                    <label class="font-bebas" style="color: black;">
-                                      <input name="group1" type="radio" checked />
-                                      <span>a year</span>
-                                    </label>
-                                  </p>
-                                  <p>
-                                    <label class="font-bebas" style="color: black;">
-                                      <input name="group1" type="radio" />
-                                      <span>half year</span>
-                                    </label>
-                                  </p>
-                                  <p>
-                                    <label class="font-bebas" style="color: black;">
-                                      <input class="with-gap" name="group1" type="radio"  />
-                                      <span>3 months</span>
-                                    </label>
-                                  </p>
-                                  <p>
-                                    <label class="font-bebas" style="color: black;">
-                                      <input name="group1" type="radio" />
-                                      <span>1 month</span>
-                                    </label>
-                                  </p>
-                                </form>
-                              </div>
-                              <div class="col s6">
-                                <form action="#">
-                                  <p class="font-bebas">member type</p>
-                                  <p>
-                                    <label class="font-bebas" style="color: black;">
-                                      <input name="group1" type="radio" />
-                                      <span>civilian</span>
-                                    </label>
-                                  </p>
-                                  <p>
-                                    <label class="font-bebas" style="color: black;">
-                                      <input name="group1" type="radio" checked />
-                                      <span>guild member</span>
-                                    </label>
-                                  </p>
-                                  <p>
-                                    <label class="font-bebas" style="color: black;">
-                                      <input name="group1" type="radio" />
-                                      <span>Manager</span>
-                                    </label>
-                                  </p>
-                                  </form>
-                              </div>
-                            </div>
+                        <div class="input-field" style="margin-top: 35px;">
+                            <input value="" id="profession" type="text" class="validate" required>
+                            <label for="profession">Profession</label>
                         </div>
-                          <div class="input-field" style="margin-top: 35px;">
-                              <input value="" id="profession" type="text" class="validate" required>
-                              <label for="profession">Profession</label>
-                          </div>
-                          <div class="input-field">
-                              <textarea id="skillset" class="materialize-textarea" required></textarea>
-                              <label for="skillset">Skillset</label>
-                          </div>
-                          <div class="input-field">
-                              <input id="birthdate" value="" type="text" class="datepicker" required>
-                              <label for="birthdate">Birthdate</label>
-                          </div>
-                          <div style="text-align: center;"><a data-target="modal1" class="waves-effect waves-light btn modal-trigger " onclick="checkInput(event)">Register</a></div>
+                        <div class="input-field">
+                            <textarea id="skillset" class="materialize-textarea" required></textarea>
+                            <label for="skillset">Skillset</label>
+                        </div>
+                        <div class="input-field">
+                            <input id="birthdate" value="" type="text" class="datepicker" required>
+                            <label for="birthdate">Birthdate</label>
+                        </div>
+                        
+                        <div style="text-align: center;"><button type="submit" class="btn" onclick="checkInput(event)">Register</button></div>
+                        <!-- <div style="text-align: center;"><a data-target="modal1" class="waves-effect waves-light btn modal-trigger">Register</a></div> -->
                         </form>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
         <footer class="page-footer grey darken-3">
           <div class="container">
             <div class="row">
@@ -254,25 +218,24 @@
       <script>
         const dropdown1= document.querySelectorAll('.dropdown-trigger');
       M.Dropdown.init(dropdown1);
-        const datepicker= document.querySelectorAll('.datepicker')
-      M.Datepicker.init(datepicker)
-
       document.addEventListener('DOMContentLoaded', function() {
-      var elems3 = document.querySelectorAll('.sidenav');
-      var instances2 = M.Sidenav.init(elems3, {});
-      
-      var elems2 = document.querySelectorAll('.modal');
-      var instances2 = M.Modal.init(elems2, {});
+        var elems = document.querySelectorAll('.datepicker');
+        var instances = M.Datepicker.init(elems, {});
 
+        var elems2 = document.querySelectorAll('.modal');
+        var instances2 = M.Modal.init(elems2, {});
 
-      });
-      var name = sessionStorage.getItem("name");
+        var elems3 = document.querySelectorAll('.sidenav');
+        var instances3 = M.Sidenav.init(elems3, {});
+
+        var name = sessionStorage.getItem("name");
         if (name){
             var fullname = document.querySelector('#full_name');
             fullname.setAttribute('value',name);
         }
-      
-      function checkStrengthPwd(){
+        });
+
+        function checkStrengthPwd(){
             var pwd = document.querySelector('#password');
             var msg = document.querySelector('.password-msg');
             var regex = /^[A-Za-z0-9]+$/;
@@ -290,9 +253,9 @@
                 pwd.classList.remove("invalid");
                 pwd.classList.add("valid");
             }
-      }
+        }
 
-      function checkMatchPwd(){
+        function checkMatchPwd(){
             var pwd = document.querySelector('#password');
             var pwd2 = document.querySelector('#password2');
             var msg = document.querySelector('.password2-msg');
@@ -305,9 +268,9 @@
                 pwd2.classList.remove("invalid");
                 pwd2.classList.add("valid");
             }
-      }
+        }
 
-      function generatePassword() {
+        function generatePassword() {
             var length = 10,
                 charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_+{}:,./'<>?",
                 retVal = "";
@@ -315,9 +278,9 @@
                 retVal += charset.charAt(Math.floor(Math.random() * n));
             }
             return retVal;
-      }
+        }
 
-      function showPwd(n){
+        function showPwd(n){
             if (n == 1){
                 var pwd = document.querySelector('#password');
                 var vis = document.querySelector('#vis');
@@ -328,9 +291,9 @@
             pwd.setAttribute('type', 'text');
             vis.textContent = 'visibility';
             vis.setAttribute('onclick', 'hidePwd('+n+')');
-      }
+        }
 
-      function hidePwd(n){
+        function hidePwd(n){
             if (n == 1){
                 var pwd = document.querySelector('#password');
                 var vis = document.querySelector('#vis');
@@ -341,15 +304,16 @@
             pwd.setAttribute('type', 'password');
             vis.textContent = 'visibility_off';
             vis.setAttribute('onclick', 'showPwd('+n+')');
-      }
-    
-      function generatePwd(){
+        }
+
+        function generatePwd(){
             var pwd = document.querySelector('#password');
-            pwd.value = " ";
+            pwd.value = '';
             pwd.value = generatePassword();
             showPwd(1);
-      }
-      function checkPhone(n){
+        }
+
+        function checkPhone(n){
             if (n == 1){
                 var selectphone = document.querySelector('#phone')
                 var phone = selectphone.value;
@@ -370,7 +334,7 @@
             }
         }
 
-      function checkInput(event){
+        function checkInput(event){
             var input = document.querySelectorAll("input");
             var error = false;
             input.forEach(function(item, index, list){
@@ -402,7 +366,7 @@
 
                 window.location.href = "afterlogin.html";
             }
-      }
+        }
       </script>
     </body>
   </html>
