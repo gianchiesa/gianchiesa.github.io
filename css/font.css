@@ -88,6 +88,18 @@
     cursor: pointer;
     border-radius: 5px;
   }
+  .button-searchz {
+    color: #fcfcfc;
+    margin-bottom: 15px;
+    margin-left: 0px;
+    background-color: #00bff3;
+    font-family: 'Bebas Neue' !important;
+    font-size: 40px;
+    padding: 25px 25px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
   .platinum {
     color: #080808;
     margin-left: 10px;
