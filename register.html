@@ -67,25 +67,29 @@
                 </div>
                 <!-- <div class="font-bebas center-align" style="font-size: 40px;"><img src="images/logo.svg" class="vertical-middle" style="margin-right: 10px;" alt="Logo" width="70px">Erudite</div> -->
                 <div class="card" style="margin-top: 20px;">
+                  <div class="card-image">
+                    <img src="img/iconb.png">
+                    <span class="card-title"></span>
+                  </div>
                     <div class="card-content">
-                        <p class="font-fira" style="text-align: center; margin-bottom: 25px; font-size:200%; color:#333533;">Registration Form</p>
+                        <p class="text-nav" style="text-align: center; margin-bottom: 25px; font-size:200%; color:#333533;">Registration Form</p>
                         <form action="afterlogin.html">
                         <div class="input-field">
                             <input value="" id="username" type="text" class="validate" required>
-                            <label for="username">Username</label>
+                            <label for="username" style="font-family: Bebas Neue;">Username</label>
                         </div>
                         <div style="margin-top: -15px;">
                             <div class="row" style="margin: 0;">
                                 <div class="col s7 m9" style="padding: 0; height: 70px;">
                                     <div class="input-field">
                                         <input onkeyup="checkStrengthPwd()" placeholder="Password" id="password" type="password" required>
-                                        <label for="password">Password</label>
+                                        <label for="password" style="font-family: Bebas Neue;">Password</label>
                                         <!-- <span class="password-msg" data-error="wrong" data-success="right"></span> -->
                                     </div>
                                 </div>
                                 <div class="col s5 m3" style="padding: 0;">
                                     <i onclick="showPwd(1)" id="vis" class="material-icons vertical-middle" style="cursor: pointer; margin-top: 20px;">visibility_off</i>
-                                    <span onclick="generatePwd()" class="btn vertical-middle font-hp" style="margin-top: 20px; margin-left: 5px; padding: 0px 8px;">Generate</span>
+                                    <span onclick="generatePwd()" class="btn vertical-middle" style="margin-top: 20px; margin-left: 5px; padding: 0px 8px; background-color: #06bff3; font-family: Bebas Neue;">Generate</span>
                                 </div>
                             </div>
                             <span class="password-msg" data-error="wrong" data-success="right"></span>
@@ -93,12 +97,12 @@
                         <div class="row" style="margin: 0;">
                             <div class="col s7 m9" style="padding: 0; height: 70px;">
                                 <div class="input-field">
-                                    <input onkeyup="checkMatchPwd()" placeholder="Confirm Password" id="password2" type="password" required>
-                                    <label for="password2">Confirm Password</label>
+                                    <input onkeyup="checkMatchPwd()" placeholder="Repeat your Password" id="password2" type="password" required>
+                                    <label for="password2" style="font-family: Bebas Neue;">Repeat your password</label>
                                 </div>
                             </div>
                             <div class="col s5 m3" style="padding: 0;">
-                                <i onclick="showPwd(2)" id="vis2" class="material-icons" style="cursor: pointer; margin-top: 30px;">visibility_off</i>
+                                <i onclick="showPwd(2)" id="vis2" class="material-icons" style="cursor: pointer; margin-top: 30px; ">visibility_off</i>
                             </div>
                         </div>
                         <span class="password2-msg" data-error="wrong" data-success="right"></span>
@@ -108,14 +112,14 @@
                         </div> -->
                         <div class="input-field">
                             <input placeholder="Full Name" value="" id="full_name" type="text" class="validate">
-                            <label for="full_name">Full Name</label>
+                            <label for="full_name" style="font-family: Bebas Neue;">Full Name</label>
                         </div>
                         <div class="input-field">
-                            <input placeholder="31882137271405587" value="" id="nik" type="number" class="validate" required>
-                            <label for="nik">NIK</label>
+                            <input placeholder="318821123124325" value="" id="nik" type="number" class="validate" required>
+                            <label for="nik" style="font-family: Bebas Neue;">NIK</label>
                         </div>
                         <div class="file-field input-field">
-                            <div class="btn">
+                            <div class="btn" style="background-color: #06bff3; font-family: Bebas Neue;">
                               <span>Upload KTP</span>
                               <input type="file" id="ktp" required>
                             </div>
@@ -129,38 +133,38 @@
                         </div>
                         <div style="margin-top: -10px; margin-bottom: -10px;">
                             <div class="row">
-                                <div class="col s6">
-                                    <label>Member Type</label>
-                                    <select id="member-type" name="member-type" class="browser-default">
-                                        <option value="Civilian" selected>Civilian</option>
-                                        <option value="Guild Member">Guild Member</option>
-                                        <option value="Manager">Manager</option>
-                                    </select>
-                                </div>
-                                <div class="col s6">
-                                    <label>Join Period</label>
-                                    <select id="join-period" name="join-period" class="browser-default">
-                                        <option value="1" selected>1 Month</option>
-                                        <option value="3">3 Months</option>
-                                        <option value="6">6 Months</option>
-                                        <option value="12">12 Months</option>
-                                    </select>
-                                </div>
+                              <div class="col s6">
+                                <label style="font-family: Bebas Neue;">Join Period</label>
+                                <select id="join-period" name="join-period" class="browser-default">
+                                    <option value="1" selected>1 Month</option>
+                                    <option value="3">3 Months</option>
+                                    <option value="6">6 Months</option>
+                                    <option value="12">12 Months</option>
+                                </select>
+                              </div>
+                              <div class="col s6">
+                                  <label style="font-family: Bebas Neue;">Member Type</label>
+                                  <select id="member-type" name="member-type" class="browser-default">
+                                      <option value="Civilian" selected>Civilian</option>
+                                      <option value="Guild Member">Guild Member</option>
+                                      <option value="Manager">Manager</option>
+                                  </select>
+                              </div>
                             </div>
                         </div>
                         <div style="margin-bottom: -20px;">
                             <div class="row" style="padding: 0;">
                                 <div class="col s6">
                                     <div class="input-field" style="margin-bottom: 0px;">
-                                        <input onkeyup="checkPhone(1)" placeholder="+628139847255" id="phone" type="text" style="margin-top: 5px;" required>
-                                        <label for="phone">Handphone Number</label>
+                                        <input onkeyup="checkPhone(1)" placeholder="+628234234423" id="phone" type="text" style="margin-top: 5px;" required>
+                                        <label for="phone" style="font-family: Bebas Neue;">Handphone Number</label>
                                     </div>
                                     <span class="phone-msg" data-error="wrong" data-success="right"></span>
                                 </div>
                                 <div class="col s6">
                                     <div class="input-field" style="margin-bottom: 0px;">
-                                        <input onkeyup="checkPhone(2)" placeholder="+628139847255" id="phone2" type="text" style="margin-top: 5px;">
-                                        <label for="phone2">Telephone Number (Optional)</label>
+                                        <input onkeyup="checkPhone(2)" placeholder="+62823423452" id="phone2" type="text" style="margin-top: 5px;">
+                                        <label for="phone2" style="font-family: Bebas Neue;">Telephone Number (Optional)</label>
                                     </div>
                                     <span class="phone2-msg" data-error="wrong" data-success="right"></span>
                                 </div>
@@ -179,7 +183,7 @@
                             <label for="birthdate">Birthdate</label>
                         </div>
                         
-                        <div style="text-align: center;"><button type="submit" class="btn" onclick="checkInput(event)">Register</button></div>
+                        <div style="text-align: center;"><button type="submit" class="btn" style="font-family: Bebas Neue; background-color: #06bff3;" onclick="checkInput(event)">Register</button></div>
                         <!-- <div style="text-align: center;"><a data-target="modal1" class="waves-effect waves-light btn modal-trigger">Register</a></div> -->
                         </form>
                     </div>
