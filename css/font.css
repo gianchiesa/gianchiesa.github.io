@@ -99,7 +99,12 @@
     cursor: pointer;
     border-radius: 5px;
   }
-
+  .body1 {
+    background-image: url('img/iconb.png');
+    background-size: 1400px;
+    opacity: 30%;
+    background-blend-mode: lighten;
+  }
   .platinum {
     color: #080808;
     margin-left: 10px;

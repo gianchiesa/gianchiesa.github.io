@@ -10,8 +10,8 @@
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>GUILD CROWN</title>
+    
   </head>
-
   <body>
     <!--navbar-->
     <div>
@@ -57,61 +57,168 @@
     </div>
     <!--content-->
     <section id="Home" class="Home">
-        <div class="row">
-          <div class="col s12 m4 l9">
-            <h3 class="font-bebas1">Home</h3>
-            <div class="row">
-              <div class="col s12 m12 l12">
-                <div class="card">
-                  <div class="card-image">
-                    <img src="img/AboutUs2.png">
-                    <span class="card-title"></span>
-                  </div>
+      <div class="row">
+        <div class="col s12 m4 l5">
+          <h3 class="font-bebas1" style="color: #00bff3; font-size: 40px; text-align: center;">| Home |</h3>
+          <div class="row">
+            <div class="col s12 m12 l12">
+              <div class="card">
+                <div class="card-image" style="background-color: #00bff3;">
+                  <img class="circle" src="img/man42.jpg" style="width: 200px; margin: auto; margin-top: 23px;">
+                  <!-- <span class="card-title">Card Title</span> -->
+                  <a data-target="modal-edit" class="btn-floating halfway-fab waves-effect waves-light white modal-trigger"><i class="material-icons" style="color: black;">edit</i></a>
+                </div>
+                <div class="card-content font-fira">
+                  <p style="font-weight: bold;">Account Data</p>
+                  <p id="username">Username: gianchiesamghrz</p>
+                  <p id="name-2">Name: Gian Chiesa Maghriza</p>
+                  <p id="nik">NIK: 3201032809990003</p>
+                  <p id="type-member">Type: Admin</p>
+                  <p id="address">Address: 16810 citeureup, Bogor, ID</p>
+                  <p id="phone">Phone: +621231251214</p>
                 </div>
               </div>
             </div>
           </div>
-          <div class="hide-on-small-only">
-          <div class="col s3 m4 l3 x13 offset-x11">
-            <h3 class="font-bebas">Chat room</h3>
-            <a><img src="img/line.jpg" alt="" height="14"></a>
-            <div class="container1">
-              <img src="img/user.png" alt="Avatar">
-              <p>Hello. How are you today?</p>
-              <span class="time-right">11:00</span>
-            </div>
-            
-            <div class="container1 darker">
-              <img src="img/user.png" alt="Avatar" class="right">
-              <p>Hey! I'm fine. Thanks for asking!</p>
-              <span class="time-left">11:01</span>
-            </div>
-            
-            <div class="container1">
-              <img src="img/user.png" alt="Avatar">
-              <p>Sweet! So, what do you wanna do today?</p>
-              <span class="time-right">11:02</span>
-            </div>
-            
-            <div class="container1 darker">
-                <div class="input-field ">
-                  <input id="icon_telephone" type="tel" class="messege">
-                  <label for="icon_telephone">type messege</label>
-                  <button class="button-search"><i class="material-icons">send</i>
-                  </button>
-                </div>
-            </div>
-          </div>
-          </div>
         </div>
-        <div class="row">
-          <div class="col s9 m4 l4">
-            <h3 class="font-bebas1">Job list</h3>
-            <div class="hide-on-large-only">
-              <a><img src="img/line1.jpg" alt="" height="42"></a>
+        <div class="hide-on-small-only">
+        <div class="col s3 m4 l7 x13 offset-x11">
+          <h3 class="font-bebas" style="color: #00bff3; text-align: center; font-size: 40px;">| List Of Member |</h3>
+          <a><img src="img/line.jpg" alt="" height="14"></a>
+          <table style="margin: auto; margin-top: 0px; margin-bottom: 15px; background-color: white ;">
+            <thead style="background-color: #06bff3;">
+              <tr>
+                  <th>No</th>
+                  <th>Username</th>
+                  <th>Full Name</th>
+                  <th>Profession</th>
+                  <th>Rank</th>
+                  <th>Gold earning</th>
+              </tr>
+            </thead>
+    
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>sentinel</td>
+                <td>Ashley bright</td>
+                <td>Dragon Tamer</td>
+                <td>Platinum</td>
+                <td>10.523.463 Gold</td>
+              </tr>
+              <tr style="background-color:gainsboro;">
+                <td>2</td>
+                <td>Astralwanderer</td>
+                <td>robert hook</td>
+                <td>Special Caster</td>
+                <td>Platinum</td>
+                <td>19.523.463 Gold</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>miawaug</td>
+                <td>kevin Mash</td>
+                <td>Royal archer</td>
+                <td>Platinum</td>
+                <td>9.423.463 Gold</td>
+              </tr>
+              <tr style="background-color:gainsboro;">
+                <td>4</td>
+                <td>aceofdawn</td>
+                <td>Jack bill</td>
+                <td>Unbreakable knight</td>
+                <td>Platinum</td>
+                <td>8.523.463 Gold</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>tlcautowin</td>
+                <td>lazu</td>
+                <td>Feeder</td>
+                <td>Platinum</td>
+                <td>8.123.463 Gold</td>
+              </tr>
+              <tr style="background-color:gainsboro;">
+                <td>6</td>
+                <td>metalknight</td>
+                <td>alan duncan</td>
+                <td>boss challenger</td>
+                <td>Platinum</td>
+                <td>7.523.463 Gold</td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td>reiinvisible</td>
+                <td>John McWang</td>
+                <td>Assasin of Copurtor</td>
+                <td>Platinum</td>
+                <td>6.523.463 Gold</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        </div>
+      </div>
+      <div class="row" style="margin: 0;">
+        <div class="col s12">
+          <!-- Modal Structure -->
+          <div id="modal-edit" class="modal">
+            <div class="modal-content" style="text-align:center;">
+            <h4>Edit Profile</h4>
+            <div class="row">
+              <div class="col s12">
+                <div class="input-field">
+                  <input placeholder="New Full Name" id="fullname-new" type="text" class="validate">
+                  <label for="fullname-new">New Full Name</label>
+                </div>
+                <div class="input-field">
+                  <input placeholder="New Address" id="address-new" type="text" class="validate">
+                  <label for="address-new">New Address</label>
+                </div>
+                <div class="input-field">
+                  <input placeholder="New Phone" id="phone-new" type="text" class="validate">
+                  <label for="phone-new">New Phone</label>
+                </div>
+              </div>
             </div>
-            <div class="hide-on-small-only">
-              <a><img src="img/line.jpg" alt="" height="42"></a>
+          </div>
+            <div style="text-align:center; margin-bottom: 15px;">
+            <a class="modal-close waves-effect waves-green btn">Cancel</a>
+            <a class="modal-close waves-effect waves-green btn">Submit</a>
+            </div>
+          </div>
+          <div id="modal-job" class="modal">
+            <div class="modal-content" style="text-align:center;">
+            <h4>New Job</h4>
+            <div class="row">
+              <div class="col s12">
+                <div class="input-field">
+                  <input placeholder="Job Title" id="job-title" type="text" class="validate">
+                  <label for="job-title">Job Title</label>
+                </div>
+                <div class="input-field">
+                  <input placeholder="Job Description" id="job-description" type="email" class="validate">
+                  <label for="job-description">Job Description</label>
+                </div>
+                <div class="input-field">
+                  <input placeholder="5" id="job-reward" type="number" class="validate">
+                  <label for="job-reward">Job Reward (in Gold) </label>
+                </div>
+                <div style="text-align: left;">
+                <label>Job Required Rank</label>
+                <select id="job-rank" name="job-rank" class="browser-default" style="margin-top: 5px;">
+                    <option value="Iron" selected>Iron</option>
+                    <option value="Silver">Silver</option>
+                    <option value="Gold">Gold</option>
+                    <option value="Platinum">Platinum</option>
+                </select>
+                </div>
+              </div>
+            </div>
+          </div>
+            <div style="text-align:center; margin-bottom: 15px;">
+            <a class="modal-close waves-effect waves-green btn">Cancel</a>
+            <a class="modal-close waves-effect waves-green btn">Submit</a>
             </div>
           </div>
           <div class="hide-on-small-only">
@@ -233,7 +340,7 @@
             </ul>
           </div>
           <div class="col s12 m6 l3">
-            <button class="button-search2" style="margin-left: 50px">make a new job</button>
+            <a data-target="modal-job" class="button-search2 modal-trigger" style="margin-left: 50px">make a new job</a>
           </div>
         </div>      
     </section>
@@ -276,6 +383,8 @@
       document.addEventListener('DOMContentLoaded', function() {
       var elems2 = document.querySelectorAll('.sidenav');
       var instances2 = M.Sidenav.init(elems2, {});
+      var elems4 = document.querySelectorAll('.modal');
+      var instances4 = M.Modal.init(elems4, {});
 
       });
     </script>
