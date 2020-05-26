@@ -34,7 +34,7 @@
             <li><a href="#" class="dropdown-trigger btn" data-target='dropdown2' style="font-family: Bebas Neue; font-size: 32px; background-color: #212121 ;">| Login</a></li>
               <ul id='dropdown2' class='dropdown-content'>
                 <li><a href="login.html" class="text-nav" style="color: black;">login as member</a></li>
-                <li><a href="loginsso.html" class="text-nav" style="color: black;">login as civilian</a></li>
+                <li><a href="loginsso.html" class="text-nav" style="color: black;">login as admin</a></li>
               </ul>
             </ul>
           </div>
@@ -48,7 +48,7 @@
         <li><a href="#" class="dropdown-trigger" data-target='dropdown1' style="font-family: Bebas Neue; font-size: 15px; background-color: white; color: black; align-items: flex-start;">| Login</a></li>
         <ul id='dropdown1' class='dropdown-content'>
           <li><a href="login.html" class="text-nav" style="color: black;">login as member</a></li>
-          <li><a href="loginsso.html" class="text-nav" style="color: black;">login as civilian</a></li>
+          <li><a href="loginsso.html" class="text-nav" style="color: black;">login as admin</a></li>
       </ul>
     </div>
     <div class="row">
@@ -61,23 +61,25 @@
           <div class="card-content">
             <ul>
               <li>
-                <div class="row"  >
+                <form action="afterlogin.html">
+                <div class="row">
                   <div class="input-field col s4 m6 l6 offset-l3 s12">
-                    <input value="GianGC"id="username" type="text" class="validate">
+                    <input id="username" type="text" class="validate" required>
                     <label for="username" class="font-bebas" style="color: black;">Username</label>
                   </div>
                 </div>
                 <div class="row">
                   <div class="input-field col s4 m6 l6 offset-l3 s12">
-                    <input value="qwerty123" id="password" type="password" class="validate">
+                    <input id="password" type="password" class="validate" required>
                     <label for="password" class="font-bebas" style="color: black;">Password</label>
                   </div>
                   <div class="row">
                     <div class="col s12">
-                      <a href="afterlogin.html" class="button-search2" style="margin-left: 170px; height: 75px; width: 150px; font-size: 20pt; opacity: 100%;">login</a>
+                      <button type="submit" class="button-search2" style="margin-left: 170px; height: 75px; width: 150px; font-size: 20pt; opacity: 100%;">login</button>
                     </div>
                   </div>
                 </div>
+                </form>
               </li>
             </ul>
           </div>
