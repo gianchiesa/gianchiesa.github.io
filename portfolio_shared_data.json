@@ -1,0 +1,90 @@
+{
+    "basic_info": {
+      "name": "Gian Chiesa Maghriza",
+      "titles": ["Mobile App Developer", "Front-end Developer" ],
+      "social": [
+        {
+          "name": "github",
+          "url": "https://github.com/gianchiesa",
+          "class": "fab fa-github"
+        },
+        {
+          "name": "linkedIn",
+          "url": "https://www.linkedin.com/in/gian-chiesa-110360137/",
+          "class": "fab fa-linkedin"
+        }
+      ],
+      "image": "myProfile.jpg"
+    },
+    "skills": {
+      "icons": [
+        {
+          "name": "HTML 5",
+          "class": "devicon-html5-plain",
+          "level": "95"
+        },
+        {
+          "name": "CSS 3",
+          "class": "devicon-css3-plain",
+          "level": "95"
+        },
+        {
+          "name": "TypeScript",
+          "class": "devicon-typescript-plain",
+          "level": "90"
+        },
+        {
+          "name": "JavaScript",
+          "class": "devicon-javascript-plain",
+          "level": "70"
+        },
+        {
+          "name": "Bootstrap",
+          "class": "devicon-bootstrap-plain",
+          "level": "85"
+        },
+        {
+          "name": "Flutter",
+          "class": "",
+          "level": "65",
+          "src":"flutter_icon.jpg"
+        },
+        {
+          "name": "Dart",
+          "class": "",
+          "level": "60",
+          "src":"dart_icon.png"
+        },
+        {
+          "name": "PHP",
+          "class": "",
+          "level": "60",
+          "src":"php_icon.png"
+        },
+        {
+          "name": "Python",
+          "class": "",
+          "level": "60",
+          "src":"python_icon.png"
+        },
+        {
+          "name": "Android",
+          "class": "",
+          "level": "60",
+          "src":"android_icon.png"
+        },
+        {
+          "name": "Kotlin",
+          "class": "",
+          "level": "60",
+          "src":"kotlin_icon.png"
+        },
+        {
+          "name": "Git",
+          "class": "",
+          "level": "60",
+          "src":"git_icon.png"
+        }
+      ]
+    }
+  }

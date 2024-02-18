@@ -1,0 +1,120 @@
+{
+    "basic_info": {
+      "description_header": "Hallo",
+      "description": "👋 Saya Gian Chiesa Maghriza. Saya seorang Sarjana Ilmu Komputer lulusan Universitas Negeri Jakarta yang memiliki semangat untuk meningkatkan keahlian saya. Pengalaman saya dengan proyek yang relevan menunjukkan bahwa kemahiran saya sebagai Frontend Developer menggunakan Codeigniter dan Flask, Mobile Apps menggunakan Flutter dan Kotlin masih bisa ditingkatkan sejalan dengan perkerjaan saya dalam bidang Web Development and Mobile Apps Development",
+      "section_name": {
+        "about": "Tentang Saya",
+        "projects": "Project",
+        "skills": "Skill",
+        "experience": "Pengalaman"
+      }
+    },
+    "projects": [
+      {
+        "title": "Ekta",
+        "startDate": "2023",
+        "description": "Ini adalah aplikasi dengan user terbanyak yang pernah saya kembangkan. Saya belajar beberapa teknologi baru untuk mengembangkan aplikasi ini. Contohnya, agar aplikasi dapat didelivery kepada user secepat mungkin ketika terjadi update, saya menggunakan Shorebird sebagai 3rd party tools supaya bisa mendeliver update tanpa mendeploy update apps ke playstore. disini saya menggunakan flutter versi 3 dan provider sebagai state management",
+        "images": [
+          "images/ekta_logo.png",
+          "images/ekta_mockup.png",
+          "images/ekta_app.png"
+        ],
+        "url": "https://play.google.com/store/apps/details?id=com.bsnpartaigolkar&hl=en_US",
+        "technologies": [
+          {
+            "class": "",
+            "name": "Flutter",
+            "src": "flutter_icon.jpg"
+          },
+          {
+            "class": "",
+            "name": "Dart",
+            "src": "dart_icon.png"
+          }
+        ]
+      },
+      {
+        "title": "Portaless",
+        "startDate": "2024",
+        "description": "Ini adalah proyek terbaru yang saya buat di perusahaan tempat saya bekerja. Saya sangat senang dengan aplikasi ini. Aplikasi ini memiliki 2 sisi, sisi Mitra dan sisi pengguna/pelanggan. Aplikasi ini menyediakan layanan mitra kepada pelanggan sebagai produk dan menghubungkan mereka dengan aplikasi ini.",
+        "images": [
+          "images/portaless_logo.png"
+        ],
+        "url": "",
+        "technologies": [
+          {
+            "class": "",
+            "name": "Flutter",
+            "src": "flutter_icon.jpg"
+          },
+          {
+            "class": "",
+            "name": "Dart",
+            "src": "dart_icon.png"
+          }
+        ]
+      },
+      {
+        "title": "Aqua Breeding",
+        "startDate": "2022",
+        "description": "Aplikasi pertama yang saya buat dengan flutter. Saya harus mengembangkan implementasi front-end untuk aplikasi yang menggunakan flutter untuk frontend dan python(flask) untuk backend. Saya membuat aplikasi ini setelah saya belajar flutter selama dua minggu. Aplikasi ini dibuat untuk mendukung manajemen budidaya perikanan. Saya menjadikan aplikasi ini sebagai tesis saya di Universitas Negeri Jakarta untuk persyaratan kelulusan gelar Sarjana saya!.",
+        "images": [
+          "images/aquabreeding_logo.png",
+          "images/aquabreeding_mockup.png",
+          "images/aquabreeding_mockup2.png"
+        ],
+        "url": "https://drive.google.com/file/d/1ZfN3vxGHgyfrTxCni_XKrifB9m56gnDp/view?usp=sharing",
+        "technologies": [
+          {
+            "class": "",
+            "name": "Flutter",
+            "src": "flutter_icon.jpg"
+          },
+          {
+            "class": "",
+            "name": "Dart",
+            "src": "dart_icon.png"
+          },
+          {
+            "class": "",
+            "name": "Python",
+            "src": "python_icon.png"
+          }
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "DefOpenSource",
+        "title": "Front-End Developer",
+        "years": "10.2019 - obecnie",
+        "mainTech": [
+          "Angular 8/9/10"
+        ],
+        "technologies": [
+          "REST API",
+          "RxJS",
+          "JavaScript",
+          "Bootstrap",
+          "MDBootstrap",
+          "EF Core",
+          "Angular Material"
+        ]
+      },
+      {
+        "company": "Serros Solutions",
+        "title": "Stażystka",
+        "years": "01.2018 - 09.2019",
+        "mainTech": [
+          "Angular 7/8"
+        ],
+        "technologies": [
+          "REST API",
+          "RxJS",
+          "Swagger",
+          "JavaScript",
+          "DHTMLX Gantt"
+        ]
+      }
+    ]
+  }

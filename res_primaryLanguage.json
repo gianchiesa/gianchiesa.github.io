@@ -1,0 +1,128 @@
+{
+    "basic_info": {
+      "description_header": "Hi",
+      "description": "👋 I'm Gian Chiesa Maghriza. I am a Bachelor of Computer Science that graduated from State University of Jakarta who is self-driven to improve my skill set. My experience with relevant projects demonstrates that my proficiency as Frontend Developer using Codeigniter and Flask, Mobile Apps using Flutter and Kotlin is improving due to my experience in a path of studying Web Development and Mobile Apps Development.",
+      "section_name": {
+        "about": "About Me",
+        "projects": "Projects",
+        "skills": "Skills",
+        "experience": "Experience"
+      }
+    },
+    "projects": [
+      {
+        "title": "ekta",
+        "startDate": "2023",
+        "description": "This is the application with the most users that I have ever developed. I learned some new technologies to develop this application. For example, so that applications can be delivered to users as quickly as possible when an update occurs, I use Shorebird as a 3rd party tool so that I can deliver updates without deploying updated apps to Playstore. Here I use Flutter version 3 and provider as state management.",
+        "images": [
+          "images/ekta_logo.png",
+          "images/ekta_mockup.png",
+          "images/ekta_app.png"
+        ],
+        "url": "https://play.google.com/store/apps/details?id=com.bsnpartaigolkar&hl=en_US",
+        "technologies": [
+          {
+            "class": "",
+            "name": "Flutter",
+            "src": "flutter_icon.jpg"
+          },
+          {
+            "class": "",
+            "name": "Dart",
+            "src": "dart_icon.png"
+          }
+     
+        ]
+      },
+      {
+        "title": "Portaless",
+        "startDate": "2024",
+        "description": "This is the newest project that made by me at my company that I work. I'm very excited with this app. This apps has 2 side, Partner side and user/customer side. This apps is providing customer with partner service as a product and connecting them with it.",
+        "images": [
+          "images/portaless_logo.png"
+        ],
+        "url": "",
+        "technologies": [
+          {
+            "class": "",
+            "name": "Flutter",
+            "src": "flutter_icon.jpg"
+          },
+          {
+            "class": "",
+            "name": "Dart",
+            "src": "dart_icon.png"
+          }
+        ]
+      },
+      {
+        "title": "Aqua Breeding",
+        "startDate": "2022",
+        "description": "The first app I was made with flutter. I had to develop front-end implementation for app that used flutter for the frontend and python(flask) for the backend. I was make this app after I learned flutter with two weeks. This app made to support aquaculture cultivation management. I've made this apps as my thesis in State University of Jakarta for the graduation requirement for my Bachelor degree!.",
+        "images": [
+          "images/aquabreeding_logo.png",
+          "images/aquabreeding_mockup.png",
+          "images/aquabreeding_mockup2.png"
+        ],
+        "url": "https://drive.google.com/file/d/1ZfN3vxGHgyfrTxCni_XKrifB9m56gnDp/view?usp=sharing",
+        "technologies": [
+          {
+            "class": "",
+            "name": "Flutter",
+            "src": "flutter_icon.jpg"
+          },
+          {
+            "class": "",
+            "name": "Dart",
+            "src": "dart_icon.png"
+          },
+          {
+            "class": "",
+            "name": "Python",
+            "src": "python_icon.png"
+          }
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "PT. Satu Teknologi Digital",
+        "title": "Mobile Apps Developer",
+        "years": "05.2022 - present",
+        "mainTech": [
+          "Flutter, Dart, Git"
+        ],
+        "technologies": [
+          "REST API",
+          "Provider",
+          "GetX",
+          "BLOC",
+          "Shorebird",
+          "Firebase",
+          "One Signal",
+          "Meta SDK",
+          "Git"
+        ],
+        "src":"flutter_icon_png.png"
+      },
+      {
+        "company": "PT. Nirmala Satya Development",
+        "title": "Front-end Developer",
+        "years": "01.2021 - 04.2021",
+        "mainTech": [
+          "PHP"
+        ],
+        "technologies": [
+          "Codeignitor",
+          "HTML",
+          "CSS",
+          "PHP",
+          "JavaScript",
+          "Bootstrap",
+          "Git",
+          "REST API"
+        ],
+        "src":"php_icon_png.png"
+      }
+    ]
+  }
