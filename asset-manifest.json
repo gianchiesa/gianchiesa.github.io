@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/gianchiesa.github.io/static/css/main.ec109ca7.css",
-    "main.js": "/gianchiesa.github.io/static/js/main.2e50336a.js",
-    "index.html": "/gianchiesa.github.io/index.html",
-    "main.ec109ca7.css.map": "/gianchiesa.github.io/static/css/main.ec109ca7.css.map",
-    "main.2e50336a.js.map": "/gianchiesa.github.io/static/js/main.2e50336a.js.map"
+    "main.css": "/static/css/main.ec109ca7.css",
+    "main.js": "/static/js/main.a10c93a9.js",
+    "index.html": "/index.html",
+    "main.ec109ca7.css.map": "/static/css/main.ec109ca7.css.map",
+    "main.a10c93a9.js.map": "/static/js/main.a10c93a9.js.map"
   },
   "entrypoints": [
     "static/css/main.ec109ca7.css",
-    "static/js/main.2e50336a.js"
+    "static/js/main.a10c93a9.js"
   ]
 }
