@@ -85,36 +85,45 @@
     ],
     "experience": [
       {
-        "company": "DefOpenSource",
-        "title": "Front-End Developer",
-        "years": "10.2019 - obecnie",
+        "company": "PT. Satu Teknologi Digital",
+        "title": "Mobile Apps Developer",
+        "years": "05.2022 - present",
         "mainTech": [
-          "Angular 8/9/10"
+          "Flutter, Dart, Git"
         ],
         "technologies": [
           "REST API",
-          "RxJS",
-          "JavaScript",
-          "Bootstrap",
-          "MDBootstrap",
-          "EF Core",
-          "Angular Material"
-        ]
+          "Provider",
+          "GetX",
+          "BLOC",
+          "Shorebird",
+          "Firebase",
+          "One Signal",
+          "Meta SDK",
+          "Git"
+        ],
+        "src":"flutter_icon_png.png"
+        
       },
       {
-        "company": "Serros Solutions",
-        "title": "Stażystka",
-        "years": "01.2018 - 09.2019",
+        "company": "PT. Nirmala Satya Development",
+        "title": "Front-end Developer",
+        "years": "01.2021 - 04.2021",
         "mainTech": [
-          "Angular 7/8"
+          "PHP"
         ],
         "technologies": [
-          "REST API",
-          "RxJS",
-          "Swagger",
+          "Codeignitor",
+          "HTML",
+          "CSS",
+          "PHP",
           "JavaScript",
-          "DHTMLX Gantt"
-        ]
+          "Bootstrap",
+          "Git",
+          "REST API"
+        ],
+        "src":"php_icon_png.png"
+        
       }
     ]
   }
